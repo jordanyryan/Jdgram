@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root 'posts#index'
   devise_for :users, :controllers => { registrations: 'registrations' }  
   resources :posts, :users
   
@@ -6,7 +7,6 @@ Rails.application.routes.draw do
     resources :comments
   end
 
-  root 'posts#index'
 
 
 end
