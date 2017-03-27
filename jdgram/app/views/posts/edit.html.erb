@@ -1,0 +1,7 @@
+<%= image_tag @post.image.url(:medium) %>
+
+<%= form_for(@post) do |f| %>
+  <%=f.file_field :image %>
+  <%= f.text_field :caption %>
+  <%= f.submit "Edit image" %>
+<% end %>

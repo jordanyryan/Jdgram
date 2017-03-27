@@ -1,0 +1,15 @@
+<h1>Photogram</h1>
+
+<% @posts.each do |post| %>
+<div class="gram-post">
+<div class="username"
+  <h2><%= link_to post.user.user_name, user_path(post.user) %></h2>
+  </div>
+  <div class="gram-image"
+  <%= link_to (image_tag post.image.url(:medium)), post_path(post) %>
+  </div>
+  <div class="post-caption">
+  <p><%= post.caption %></p>
+  </div>  
+</div>
+<% end %>

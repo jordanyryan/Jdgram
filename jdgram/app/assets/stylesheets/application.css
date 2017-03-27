@@ -13,3 +13,12 @@
  *= require_tree .
  *= require_self
  */
+
+
+.gram-post {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  border: 1px solid blue;
+}
+
