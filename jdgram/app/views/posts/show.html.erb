@@ -1,4 +1,4 @@
-<div class="show-post">
+<div class="gram-post card-panel center">
 <%= @post.user.user_name %><br>
 <%= image_tag @post.image.url(:medium) %><br>
 <%= @post.caption %>
@@ -10,10 +10,6 @@
       <%= link_to post_comment_path(post, comment), method: :delete %>
     <% end %>
   </div>
-    <%= form_for(@post, @post.comments.new) do |f| %>
-      <%= f.text_field :content, placeholder: 'Add a comment...' %>
-      <%= f.submit %>
-    <% end %>
 <% end %>
 
 

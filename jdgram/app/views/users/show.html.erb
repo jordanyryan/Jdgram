@@ -1,0 +1,11 @@
+<% @user.posts.each do |post| %>
+  <div class="show-post">
+    <p><%= link_to post.user.user_name, user_path(post.user) %></p>
+    <div class="post-picture">
+      <%= image_tag post.image.url(:medium) %><br>
+    </div>
+    <div class="post-caption">
+      <%= post.caption %>
+    </div>
+  </div>
+<% end %>

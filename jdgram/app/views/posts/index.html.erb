@@ -1,9 +1,11 @@
-<h1>Photogram</h1>
+<header id="photogram">
+  <h1>JdGram</h1>
+</header>
 
 <% @posts.each do |post| %>
-<div class="gram-post">
-<div class="username"
-  <h2><%= link_to post.user.user_name, user_path(post.user) %></h2>
+<div class="gram-post card-panel center">
+  <div class="username"
+    <h2><%= link_to post.user.user_name, user_path(post.user) %></h2>
   </div>
   <div class="gram-image"
   <%= link_to (image_tag post.image.url(:medium)), post_path(post) %>

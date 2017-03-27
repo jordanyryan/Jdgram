@@ -13,12 +13,40 @@
  *= require_tree .
  *= require_self
  */
+* {
+  padding: 0;
+  margin: 0;
+}
 
-
-.gram-post {
+body {
   width: 80%;
   margin: auto;
-  text-align: center;
-  border: 1px solid blue;
 }
+
+.nav {
+  border: 1px solid black;
+}
+
+.nav #home {
+  float: left;
+}
+
+.nav #links {
+  float: right;
+}
+.nav ul li{
+  display: inline-block;
+}
+
+
+
+#photogram {
+  text-align: center;
+  color: gray;
+}
+
+
+
+
+
 
