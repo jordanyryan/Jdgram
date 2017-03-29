@@ -14,7 +14,7 @@
     <div class="nav">
       <nav>
         <ul id="home">
-          <li><%= link_to "JDGRAM", root_path%></li>
+          <li><%= link_to "JdGRAM", root_path%></li>
         </ul>
         <ul id="links">
           <% if user_signed_in?%>
@@ -23,7 +23,6 @@
           <% else %>
           <li><%= link_to "Login", new_user_session_path %></li>
           <li><%= link_to "Register", new_user_registration_path %></li>
-
           <% end %>
         </ul>
       </nav>
