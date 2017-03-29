@@ -44,6 +44,27 @@ body {
   text-align: center;
   color: gray;
 }
+.username {
+  display: inline-block;
+  width: 70%;
+}
+
+.username-link {
+  width: 40%;
+  float: left;
+  font-size: 1.3em;
+}
+
+.timestamp {
+  width: 40%;
+  float: right;
+}
+
+.username-wrapper {
+  width: 100%;
+}
+
+
 
 
 
