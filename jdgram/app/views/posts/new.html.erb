@@ -1,5 +1,8 @@
+<div class="new-post card-panel">
 <%= form_for(@post) do |f| %>
-  <%=f.file_field :image %>
-  <%= f.text_field :caption %>
+  File: <%=f.file_field :image %>
+  <br>
+  <%= f.text_field :caption, placeholder: "Add a caption" %>
   <%= f.submit "Add image" %>
 <% end %>
+</div>
