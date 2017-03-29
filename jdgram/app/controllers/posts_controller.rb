@@ -5,6 +5,7 @@ class PostsController < ApplicationController
 
   def index
     @posts = Post.all
+    @posts = @posts.sort_by {|post| post.created_at}.reverse
   end
 
   def show
