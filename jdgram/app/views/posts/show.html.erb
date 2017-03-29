@@ -14,8 +14,8 @@
 <% end %>
 
 
-<p><%= link_to "delete", post_path(@post), method: :delete, data: { confirm: "Are you sure you want to delete this post?" } %></p>
 <% if @post.user.id == current_user.id %>
+<p><%= link_to "delete", post_path(@post), method: :delete, data: { confirm: "Are you sure you want to delete this post?" } %></p>
   <p><%=link_to "Cancel", posts_path %></p>
   <p><%= link_to "Edit Post", edit_post_path(@post)%></p>
 <% end %>
